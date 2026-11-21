@@ -2,3 +2,16 @@ theme: minima
 title: ymenkhour's personal blog
 description: This is where I share cool stuff about my life
 author: ymenkhour
+
+# Markdown settings (Required for Markdown inside Homebrewery HTML divs)
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+
+# Set custom layout as the default for all Markdown files
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "homebrew"
